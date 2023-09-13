@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -13,15 +13,13 @@
   <header>
     <nav>
       <div class="container">
-        <h1 class="logo">Portofolio</h1>
+        <h1 class="logo">Portfolio</h1>
         <div class="burger-icon">
-             <div class="bar bar1"></div>
-             <div class="bar bar2"></div>
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
         </div>
         <div class="menu-toggle" id="menu-toggle">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
           <!-- Add the close icon -->
           <span id="close-icon" class="close-icon">&times;</span>
         </div>
@@ -36,7 +34,7 @@
 
   <section id="hero">
     <div class="container">
-      <h2>Welcome to My Portofolio</h2>
+      <h2>Welcome to My Portfolio</h2>
       <p>Explore my projects and skills</p>
       <a href="#projects" class="btn">View Projects</a>
     </div>
@@ -84,7 +82,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2023 Portofolio. All rights reserved.</p>
+      <p>&copy; 2023 Portfolio. All rights reserved.</p>
     </div>
   </footer>
 
@@ -95,7 +93,7 @@
     </div>
   </div>
 
-  <audio id="audio-player" src="Vance Joy - Riptide (speed up, tiktok version)    _2022 in 60 photos_.mp3"></audio>
+  <audio id="audio-player" src="Vance Joy - Riptide (speed up, tiktok version) _2022 in 60 photos_.mp3"></audio>
   <script src="script.js"></script>
   <script>
     // JavaScript for mobile menu toggle
@@ -104,11 +102,8 @@
 
     menuToggle.addEventListener('click', () => {
       menu.classList.toggle('show');
+      document.querySelector('.burger-icon').classList.toggle('open');
     });
-    document.querySelector('.burger-icon').addEventListener('click', function () {
-  this.classList.toggle('open');
-  // Toggle your mobile menu here
-});
   </script>
 </body>
 
