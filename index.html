@@ -96,13 +96,20 @@
   <audio id="audio-player" src="Vance Joy - Riptide (speed up, tiktok version) _2022 in 60 photos_.mp3"></audio>
   <script src="script.js"></script>
   <script>
-    // JavaScript for mobile menu toggle
-    const menuToggle = document.getElementById('menu-icon');
-    const menu = document.getElementById('menu-toggle');
+     // JavaScript for mobile menu toggle
+    const burgerIcon = document.querySelector('.burger-icon');
+    const menu = document.getElementById('menu');
+    const menuToggle = document.getElementById('menu-toggle');
 
-    menuToggle.addEventListener('click', () => {
+    burgerIcon.addEventListener('click', () => {
       menu.classList.toggle('show');
-      document.querySelector('.burger-icon').classList.toggle('open');
+      burgerIcon.classList.toggle('open');
+    });
+
+    // Close the menu when a menu item is clicked
+    menu.addEventListener('click', () => {
+      menu.classList.remove('show');
+      burgerIcon.classList.remove('open');
     });
   </script>
 </body>
