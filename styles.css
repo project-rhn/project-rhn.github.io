@@ -120,6 +120,16 @@ header {
 /* Add this CSS to your styles.css file */
 .burger-icon {
   display: none; /* Initially hide the burger icon */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure the icon appears above other content */
+}
+
+.burger-icon i {
+  font-size: 24px;
+  color: #fff;
 }
 
 /* Show the burger icon on mobile devices (max-width: 768px) */
