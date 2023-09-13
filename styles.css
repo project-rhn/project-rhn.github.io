@@ -71,6 +71,18 @@ header {
   margin-right: 20px;
 }
 
+.menu-toggle .menu-icon,
+.menu-toggle .close-icon {
+  color: #fff;
+  font-size: 24px;
+  display: none; /* Hide both icons by default */
+}
+
+/* Show the menu icon when the menu is closed */
+.menu-toggle .menu-icon {
+  display: inline;
+}
+
 .menu-toggle i {
   color: #fff;
   font-size: 24px;
@@ -103,6 +115,21 @@ header {
     cursor: pointer;
   }
 
+  .menu-toggle .menu-icon,
+  .menu-toggle .close-icon {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  /* Show the close icon when the menu is open */
+  .menu.show + .menu-toggle .menu-icon {
+    display: none;
+  }
+
+  .menu.show + .menu-toggle .close-icon {
+    display: inline;
+  }
+  
   .menu-toggle i {
     color: #fff;
     font-size: 24px;
