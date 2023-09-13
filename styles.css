@@ -64,10 +64,8 @@ header {
 }
 
 .menu-toggle {
-  display: flex;
-  flex-direction: column;
+  display: none;
   cursor: pointer;
-  padding: 5px;
   margin-right: 20px;
 }
 
@@ -75,17 +73,11 @@ header {
 .menu-toggle .close-icon {
   color: #fff;
   font-size: 24px;
-  display: none; /* Hide both icons by default */
 }
 
 /* Show the menu icon when the menu is closed */
 .menu-toggle .menu-icon {
   display: inline;
-}
-
-.menu-toggle i {
-  color: #fff;
-  font-size: 24px;
 }
 
 /* Mobile Menu Styles */
@@ -115,12 +107,6 @@ header {
     cursor: pointer;
   }
 
-  .menu-toggle .menu-icon,
-  .menu-toggle .close-icon {
-    color: #fff;
-    font-size: 24px;
-  }
-
   /* Show the close icon when the menu is open */
   .menu.show + .menu-toggle .menu-icon {
     display: none;
@@ -128,11 +114,6 @@ header {
 
   .menu.show + .menu-toggle .close-icon {
     display: inline;
-  }
-  
-  .menu-toggle i {
-    color: #fff;
-    font-size: 24px;
   }
 }
 
@@ -144,7 +125,7 @@ header {
 /* Show the burger icon on mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
   .burger-icon {
-    display: flex; /* Show the burger icon on mobile */
+    display: block; /* Show the burger icon on mobile */
   }
   
   /* Hide the .menu-toggle with the close icon on mobile */
