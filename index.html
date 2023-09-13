@@ -14,16 +14,14 @@
     <nav>
       <div class="container">
         <h1 class="logo">Portofolio</h1>
-        <ul class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu" id="menu">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
     </nav>
   </header>
@@ -82,23 +80,24 @@
     </div>
   </footer>
 
-<!-- HTML -->
-
-<div class="music-controls">
-  <div class="music-disc">
-    <i class="fas fa-pause pause-button music-button"></i>
-    <i class="fas fa-play play-button music-button"></i>
+  <div class="music-controls">
+    <div class="music-disc">
+      <i class="fas fa-pause pause-button music-button"></i>
+      <i class="fas fa-play play-button music-button"></i>
+    </div>
   </div>
-</div>
 
-<audio id="audio-player" src="Vance Joy - Riptide (speed up, tiktok version)    _2022 in 60 photos_.mp3"></audio>
-  <!-- <div class="music-controls">
-    <button class="play-button">Play</button>
-    <button class="pause-button">Pause</button>
-    <div class="music-disc"></div>
-  </div> -->
-
+  <audio id="audio-player" src="Vance Joy - Riptide (speed up, tiktok version)    _2022 in 60 photos_.mp3"></audio>
   <script src="script.js"></script>
+  <script>
+    // JavaScript for mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
 </body>
 
 </html>
