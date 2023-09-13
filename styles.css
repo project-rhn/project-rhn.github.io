@@ -59,6 +59,10 @@ header {
   color: #fff;
 }
 
+.menu a:hover {
+  color: #ff8f00; /* Change the hover color as needed */
+}
+
 .menu-toggle {
   display: flex;
   flex-direction: column;
