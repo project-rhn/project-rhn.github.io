@@ -125,7 +125,33 @@ header {
   right: 20px;
   cursor: pointer;
   z-index: 1000; /* Ensure the icon appears above other content */
+  width: 30px;
+  height: 30px;
 }
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate the first bar for X effect */
+.burger-icon.open .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+/* Fade out the middle bar for X effect */
+.burger-icon.open .bar2 {
+  opacity: 0;
+}
+
+/* Rotate the third bar for X effect */
+.burger-icon.open .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 
 .burger-icon i {
   font-size: 24px;
