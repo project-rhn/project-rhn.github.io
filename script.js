@@ -1,10 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu');
+     // JavaScript for mobile menu toggle
+    const burgerIcon = document.querySelector('.burger-icon');
+    const menu = document.getElementById('menu');
+    const menuToggle = document.getElementById('menu-toggle');
 
-  menuToggle.addEventListener('click', function() {
-    menu.classList.toggle('active');
-  });
+    burgerIcon.addEventListener('click', () => {
+      menu.classList.toggle('show');
+      burgerIcon.classList.toggle('open');
+    });
+
+    // Close the menu when a menu item is clicked
+    menu.addEventListener('click', () => {
+      menu.classList.remove('show');
+      burgerIcon.classList.remove('open');
+    });
 
   // Memulai pemutaran audio secara otomatis
   var audioPlayer = document.getElementById('audio-player');
