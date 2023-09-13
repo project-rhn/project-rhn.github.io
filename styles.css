@@ -136,6 +136,24 @@ header {
   }
 }
 
+/* Add this CSS to your styles.css file */
+.burger-icon {
+  display: none; /* Initially hide the burger icon */
+}
+
+/* Show the burger icon on mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .burger-icon {
+    display: block; /* Show the burger icon on mobile */
+  }
+  
+  /* Hide the .menu-toggle with the close icon on mobile */
+  .menu-toggle {
+    display: none;
+  }
+}
+
+
 /* Hero Section Styles */
 #hero {
   height: 300px;
